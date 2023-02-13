@@ -1,1 +1,1 @@
-ML ops readme from git
+Everything related to MLOps
