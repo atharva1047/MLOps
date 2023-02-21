@@ -14,7 +14,7 @@ env TMP: C:\Users\Atharva\AppData\Local\Temp
 env USERPROFILE: C:\Users\Atharva
 env LANG: en_US.UTF-8
 env PATH: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\Atharva\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Atharva\AppData\Local\Programs\Python\Python39\;C:\Users\Atharva\AppData\Local\Microsoft\WindowsApps;;C:\Users\Atharva\AppData\Local\Programs\Microsoft VS Code\bin
-env PYTHONHASHSEED: 595
+env PYTHONHASHSEED: 316
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env PYTHONPATH: .
@@ -24,16 +24,17 @@ env TOX_ENV_DIR: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-
 env VIRTUAL_ENV: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app
 env COLUMNS: 165
 env LINES: 13
-metadata pid: 21040
+metadata pid: 33636
 cwd: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api
 allow: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\Scripts\*
 cmd: python app/main.py
 exit_code: 0
-INFO:     ::1:61466 - "GET / HTTP/1.1" 200 OK
-INFO:     ::1:61466 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-INFO:     ::1:61467 - "GET /docs HTTP/1.1" 200 OK
-INFO:     ::1:61467 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
-INFO:     ::1:61492 - "POST /api/v1/predict HTTP/1.1" 200 OK
+INFO:     ::1:61982 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:61982 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:61982 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     ::1:61983 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     ::1:62000 - "GET /docs/health HTTP/1.1" 404 Not Found
+INFO:     ::1:62005 - "GET /api/v1/health HTTP/1.1" 200 OK
 
 standard error:
 C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator Binarizer from version 1.2.0 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
@@ -48,14 +49,12 @@ https://scikit-learn.org/stable/model_persistence.html#security-maintainability-
 C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator Pipeline from version 1.2.0 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
 https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
   warnings.warn(
-2023-02-18 12:06:25.915 | WARNING  | __main__:<module>:55 - Running in development mode. Do not run like this in production.
-INFO:     Started server process [20140]
+2023-02-20 11:53:18.682 | WARNING  | __main__:<module>:55 - Running in development mode. Do not run like this in production.
+INFO:     Started server process [10972]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://localhost:8001 (Press CTRL+C to quit)
-2023-02-18 12:08:53.556 | INFO     | app.api:predict:40 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=200, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=5, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1961, YearRemodAdd=1961, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-02-18 12:08:53.593 | INFO     | app.api:predict:47 - Prediction results: [110465.42823667164]
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [20140]
+INFO:     Finished server process [10972]

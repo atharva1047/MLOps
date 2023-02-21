@@ -1,0 +1,49 @@
+# Package Overview
+package_name: classification_model
+
+# Data Files
+training_data_file: xtrain.csv
+test_data_file: xtest.csv
+raw_data_file: titanic.csv
+
+# Variables
+# The variable we are attempting to predict
+target: survived
+
+pipeline_name: classification_model
+pipeline_save_file: classification_model_output_v
+
+numerical_variables:
+  - age
+  - sibsp
+  - parch
+  - fare
+
+categorical_variables:
+  - pclass
+  - sex
+  - cabin
+  - embarked
+  - title
+
+cabin: cabin
+
+# Intendention matters in yml and here a key with intended dash is the list 
+features:
+  - age
+  - sibsp
+  - parch
+  - fare
+  - pclass
+  - sex
+  - cabin
+  - embarked
+  - title
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 0
+
+C: 0.0005
