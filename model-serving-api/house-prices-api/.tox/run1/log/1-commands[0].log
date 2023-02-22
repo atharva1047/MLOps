@@ -13,8 +13,8 @@ env TEMP: C:\Users\Atharva\AppData\Local\Temp
 env TMP: C:\Users\Atharva\AppData\Local\Temp
 env USERPROFILE: C:\Users\Atharva
 env LANG: en_US.UTF-8
-env PATH: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\Atharva\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Atharva\AppData\Local\Programs\Python\Python39\;C:\Users\Atharva\AppData\Local\Microsoft\WindowsApps;;C:\Users\Atharva\AppData\Local\Programs\Microsoft VS Code\bin
-env PYTHONHASHSEED: 316
+env PATH: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\Atharva\scoop\shims;C:\Users\Atharva\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Atharva\AppData\Local\Programs\Python\Python39\;C:\Users\Atharva\AppData\Local\Microsoft\WindowsApps;;C:\Users\Atharva\AppData\Local\Programs\Microsoft VS Code\bin
+env PYTHONHASHSEED: 584
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env PYTHONPATH: .
@@ -23,18 +23,15 @@ env TOX_WORK_DIR: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model
 env TOX_ENV_DIR: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app
 env VIRTUAL_ENV: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app
 env COLUMNS: 165
-env LINES: 13
-metadata pid: 33636
+env LINES: 15
+metadata pid: 26580
 cwd: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api
 allow: C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\Scripts\*
 cmd: python app/main.py
 exit_code: 0
-INFO:     ::1:61982 - "GET / HTTP/1.1" 200 OK
-INFO:     ::1:61982 - "GET /docs HTTP/1.1" 200 OK
-INFO:     ::1:61982 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
-INFO:     ::1:61983 - "GET /health HTTP/1.1" 404 Not Found
-INFO:     ::1:62000 - "GET /docs/health HTTP/1.1" 404 Not Found
-INFO:     ::1:62005 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     ::1:51383 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:51383 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:51383 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
 
 standard error:
 C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator Binarizer from version 1.2.0 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
@@ -49,12 +46,12 @@ https://scikit-learn.org/stable/model_persistence.html#security-maintainability-
 C:\Users\Atharva\Desktop\Atharva\Machine_Learning\ML_Ops\model-serving-api\house-prices-api\.tox\test_app\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator Pipeline from version 1.2.0 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
 https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
   warnings.warn(
-2023-02-20 11:53:18.682 | WARNING  | __main__:<module>:55 - Running in development mode. Do not run like this in production.
-INFO:     Started server process [10972]
+2023-02-22 10:26:56.701 | WARNING  | __main__:<module>:55 - Running in development mode. Do not run like this in production.
+INFO:     Started server process [12872]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://localhost:8001 (Press CTRL+C to quit)
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [10972]
+INFO:     Finished server process [12872]
